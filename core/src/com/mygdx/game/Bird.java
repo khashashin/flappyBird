@@ -16,7 +16,7 @@ public class Bird {
         img = new Texture("bird1.png");
         position = new Vector2(100, 380);
         vy = 0;
-        gravity = -0.2f;
+        gravity = -0.6f;
     }
 
     public void render(SpriteBatch batch){
@@ -25,7 +25,7 @@ public class Bird {
 
     public void update(){
         if (Gdx.input.isKeyPressed(Input.Keys.SPACE)){
-            vy = 10;
+            vy = 7;
         }
         vy += gravity;
         position.y += vy;
